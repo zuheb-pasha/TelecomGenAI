@@ -1,6 +1,6 @@
 def greet_user(name: str):
-    if name is None:
-        raise TypeError("Name cannot be None")
+    if not name:
+        return "Hello, Guest! Welcome to Telecom GenAI Assistant."
     return f"Hello, {name}! Welcome to Telecom GenAI Assistant."
 
 def main():
