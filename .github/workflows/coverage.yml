@@ -1,9 +1,10 @@
 - name: Run tests with coverage
   run: |
-    export PYTHONPATH=$PYTHONPATH:$(pwd)
+    export PYTHONPATH=$(pwd)
     coverage run -m pytest tests
     coverage-badge -o coverage.svg -f
-    
+
+
   on:
     push:
       branches: [ "main" ]
