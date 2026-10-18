@@ -1,5 +1,6 @@
 - name: Run tests with coverage
   run: |
+    export PYTHONPATH=$PYTHONPATH:src
     coverage run -m pytest tests
     coverage-badge -o coverage.svg -f
 
